@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- T5: タスク作成・編集画面の文言 -->
+<resources>
+    <string name="edit_screen_title_new">タスクを作成</string>
+    <string name="edit_screen_title_edit">タスクを編集</string>
+    <string name="edit_label_group">グループ</string>
+    <string name="edit_label_title">タイトル</string>
+    <string name="edit_label_note">メモ</string>
+    <string name="edit_label_image">画像</string>
+    <string name="edit_error_title_required">タイトルを入力してください</string>
+    <string name="edit_action_attach_image">画像を添付</string>
+    <string name="edit_action_replace_image">差し替え</string>
+    <string name="edit_error_image_save">画像の保存に失敗しました</string>
+    <string name="edit_error_task_save">タスクの保存に失敗しました</string>
+</resources>
