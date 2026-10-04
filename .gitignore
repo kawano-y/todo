@@ -22,3 +22,6 @@ local.properties
 *.dex
 *.keystore
 *.jks
+
+# Claude Code worktrees
+.claude/worktrees/
