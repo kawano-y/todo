@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- T3: タスク一覧画面の文言 -->
+<resources>
+    <string name="tasklist_empty">タスクはありません</string>
+    <string name="tasklist_completed_message">完了しました</string>
+    <string name="tasklist_undo">元に戻す</string>
+    <string name="tasklist_add_task">タスクを追加</string>
+    <string name="tasklist_complete_task">「%1$s」を完了にする</string>
+</resources>
