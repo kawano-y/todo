@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- T4: 完了一覧画面の文言 -->
+<resources>
+    <string name="completed_title">完了したタスク</string>
+    <string name="completed_empty">完了したタスクはありません</string>
+    <string name="completed_completed_at">完了: %1$s</string>
+    <string name="completed_more_options">その他の操作</string>
+    <string name="completed_action_restore">未完了に戻す</string>
+    <string name="completed_delete_dialog_title">タスクを削除しますか？</string>
+    <string name="completed_delete_dialog_message">「%1$s」を削除します。この操作は取り消せません。</string>
+    <string name="completed_restored">「%1$s」を未完了に戻しました</string>
+    <string name="completed_deleted">「%1$s」を削除しました</string>
+    <string name="completed_operation_failed">操作に失敗しました</string>
+</resources>
