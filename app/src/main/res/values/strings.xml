@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 共通文言（T0）。各タスク固有の文言は strings_<task>.xml に追加すること -->
+<resources>
+    <string name="app_name">Todo</string>
+
+    <!-- 下部ナビ -->
+    <string name="nav_tasks">タスク</string>
+    <string name="nav_completed">完了</string>
+
+    <!-- グループ -->
+    <string name="group_private">プライベート</string>
+    <string name="group_work">仕事</string>
+
+    <!-- 共通 -->
+    <string name="cd_task_image">タスクの画像</string>
+    <string name="action_save">保存</string>
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_delete">削除</string>
+    <string name="action_back">戻る</string>
+</resources>

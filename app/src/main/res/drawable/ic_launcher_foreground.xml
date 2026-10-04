@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- チェックマークのアダプティブアイコン前景（108dp, 安全領域は中央 66dp） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,64.2L36.8,55l-3.1,3.1L46,70.4l28-28l-3.1,-3.1z" />
+</vector>
