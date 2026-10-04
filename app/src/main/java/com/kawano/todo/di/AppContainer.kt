@@ -1,6 +1,9 @@
 package com.kawano.todo.di
 
 import android.content.Context
+import com.kawano.todo.data.image.ImageStorageImpl
+import com.kawano.todo.data.local.TodoDatabase
+import com.kawano.todo.data.repository.TaskRepositoryImpl
 import com.kawano.todo.domain.image.ImageStorage
 import com.kawano.todo.domain.repository.TaskRepository
 
@@ -18,15 +21,12 @@ interface AppContainer {
     val imageStorage: ImageStorage
 }
 
-/**
- * アプリ本体で使うコンテナ。
- *
- * T0 時点では暫定の in-memory 実装をバインドしている（アプリ再起動でデータは消える）。
- * T6 で `TaskRepositoryImpl`（Room）/ `ImageStorageImpl` に差し替える。
- */
+/** アプリ本体で使うコンテナ。Room と filesDir/images への画像保存をバインドする。 */
 class DefaultAppContainer(
-    @Suppress("unused") private val context: Context,
+    private val context: Context,
 ) : AppContainer {
-    override val taskRepository: TaskRepository by lazy { InMemoryTaskRepository() }
-    override val imageStorage: ImageStorage by lazy { PassThroughImageStorage() }
+    private val database by lazy { TodoDatabase.create(context) }
+
+    override val taskRepository: TaskRepository by lazy { TaskRepositoryImpl(database.taskDao()) }
+    override val imageStorage: ImageStorage by lazy { ImageStorageImpl(context) }
 }
